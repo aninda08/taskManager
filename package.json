@@ -1,0 +1,29 @@
+{
+  "name": "taskmanager",
+  "version": "1.0.0",
+  "description": "task manager",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aninda08/taskManager.git"
+  },
+  "author": "Aninda Sundar Chakraborty",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/aninda08/taskManager/issues"
+  },
+  "homepage": "https://github.com/aninda08/taskManager#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.5.9",
+    "mongoose": "^5.9.18",
+    "validator": "^13.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
