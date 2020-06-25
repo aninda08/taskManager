@@ -16,14 +16,12 @@ const taskSchema = new mongoose.Schema({
         required: true,
         ref: 'User'
     }
+},{
+    timestamps: true
 });
 
 taskSchema.pre('save', async function(next) {
     const task = this;
-
-    // if(task.isModified('password'))
-    //     user.password = await bcrypt.hash(task.password, 8);
-
     next();
 });
 
